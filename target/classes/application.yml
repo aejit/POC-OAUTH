@@ -1,0 +1,21 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          gitlab:
+            client-id: 7b01ee6364b5cb4cf634ec920f216b5394beac0cc68c8f1a958775a12ec9f4a6
+            client-secret: 4a51b27a3af241bbad5fb251460c4b4ae24760706057b481419212627be3933e
+            authorization-grant-type: authorization_code
+            redirect-uri: https://www.google.com
+            scope:
+              - read_user
+#            - openid
+#            - api
+        provider:
+          gitlab:
+            authorization-uri: https://git.web.boeing.com/oauth/authorize
+            token-uri: https://git.web.boeing.com/oauth/token
+#            user-info-uri: https://git.web.boeing.com/api/v4/user
+#            jwk-set-uri: https://git.web.boeing.com/oauth/discovery/keys
+#  http://localhost:8080
